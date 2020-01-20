@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Мария](https://up.htmlacademy.ru/htmlcss/27/user/1283755).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Бервяченок](https://htmlacademy.ru/profile/jackson).
 
 ---
 
