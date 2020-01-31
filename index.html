@@ -20,7 +20,7 @@
     </header>
 
     <main>
-      <h1>Сайт туристического городка в штате Аризона</h1>
+      <h1 class="visually-hidden">Сайт туристического городка в штате Аризона</h1>
       <img src="img/welcome.svg" width="459" height="353" alt="welcome to the gorgeous Sedona">
       <div class="">
         <p>
@@ -30,7 +30,7 @@
           Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
         </p>
       </div>
-      <h2>Преимущества</h2>
+      <h2 class="visually-hidden">Преимущества</h2>
       <section>
         <h3>Настоящий городок</h3>
         <span>— №1 —</span>
@@ -96,7 +96,32 @@
         <b>Заинтересовались?</b>
         <p>Укажите предполагаемые даты поездки, <br>
           и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <a href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
+        <a href="#">Поиск гостиницы в седоне</a>
+        <section>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <p>
+              <label for="arriving-date">Дата заезда:</label>
+              <input type="date" id="arriving-date" name="a-date" value="2017-04-24">
+            </p>
+            <p>
+              <label for="departing-date">Дата выезда:</label>
+                <input type="date" id="departing-date" name="d-date" value="2017-07-04">
+            </p>
+            <p>
+              <label for="adults">Взрослые:</label>
+              <button type="button">-</button>
+              <input type="text" id="adults" name="adults-amount">
+              <button type="button">+</button>
+            </p>
+            <p>
+              <label for="kids">Дети:</label>
+              <button type="button">-</button>
+              <input type="text" id="kids" name="kids-amount">
+              <button type="button">+</button>
+            </p>
+            <button type="submit">Найти</button>
+          </form>
+        </section>
       </div>
       <section>
         <img src="img/map.jpg"  width="1200" height="593" alt="Карта">
@@ -104,7 +129,7 @@
     </main>
     <footer>
       <p>#visitSEDONA <br>
-        <a href="">Тел: +7(495) 666-02-66<a>
+        Тел: <a href="">+7(495) 666-02-66<a>
       </p>
       <ul>
         <li><a href="#"><img src="img/tw-icon.svg" width="17" height="15" alt="Twitter"></a></li>
