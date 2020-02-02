@@ -21,10 +21,58 @@
     <main>
       <section>
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Здесь будет форма -->
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="pool" id="pool" checked>
+                <label for="pool">Бассейн</label>
+              <li>
+                <input type="checkbox" name="parking" id="parking">
+                <label for="parking">Парковка</label>
+              <li>
+                <input type="checkbox" name="wifi" id="wifi">
+                <label for="wifi">Wi-Fi</label>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="hotel" id="hotel" checked>
+                <label for="hotel">Гостиница</label>
+              <li>
+                <input type="checkbox" name="motel" id="motel" checked>
+                <label for="motel">Мотель</label>
+              <li>
+                <input type="checkbox" name="apartment" id="apartment" checked>
+                <label for="apartment">Апартаменты</label>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки (Р):</legend>
+            <label for="from">От</label>
+            <input type="text" name="from" value="0" id="from">
+            <label for="to">До</label>
+            <input type="text" name="to" value="3000" id="to">
+
+            <div class="range_buttons">
+              <button type="button" name="button_min"></button>
+              <button type="button" name="button_max"></button>
+            </div>
+            <input type="submit" value="Показать">
+          </fieldset>
       </section>
       <div>
-        <!-- Сортировка -->
+        <p>Найдено: 3</p>
+        <h3>Сортировка:</h3>
+        <ul>
+          <li><a>По цене</a></li>
+          <li><a href="">По типу</a></li>
+          <li><a href="">По рейтингу</a></li>
+        </ul>
+
       </div>
 
       <section>
