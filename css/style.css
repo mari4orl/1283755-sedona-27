@@ -2,13 +2,13 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 14px;
-  color: black;
+  color: #000000;
   line-height: 26px;
   text-transform: uppercase;
 
-  background-color: white;
+  background-color: #ffffff;
 }
 
 a {
@@ -17,11 +17,11 @@ a {
 
 .site-navigation {
   list-style: none;
-  font-weight: bold
+  font-weight: bold;
 }
 
 .site-navigation a {
-  color: black;
+  color: #000000;
 }
 
 .site-navigation a:hover {
@@ -36,11 +36,12 @@ a {
   background-image: url("../img/background-photo.jpg");
   background-position: top center;
   background-repeat: no-repeat;
+  background-color: #ddebf4;
 }
 
 
 .descript {
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .descript p {
@@ -57,7 +58,7 @@ a {
 }
 
 /* .feature-item {
-  color: white;
+  color: #ffffff;
   text-align: center;
   background-color: #81b3d2;
   line-height: 21px;
@@ -83,18 +84,18 @@ a {
 
 .interested a {
   font-size: 21px;
-  color: white;
+  color: #ffffff;
   font-weight: bold;
   background-color: #766357;
 }
 
 .interested a:hover {
-background-color: #604e43;
+  background-color: #604e43;
 }
 
 .interested a:focus {
-background-color: #503e33;
-opacity: 30%;
+  background-color: #503e33;
+  opacity: 30%;
 }
 
 .popup {
@@ -111,7 +112,7 @@ opacity: 30%;
 }
 
 .footer-contacts a {
-  color: black;
+  color: #000000;
 }
 
 .footer-social a {
@@ -137,7 +138,7 @@ opacity: 30%;
 }
 
 .hotel-name {
-  color: black;
+  color: #000000;
   font-size: 21px;
   font-weight: bold;
 }
@@ -155,34 +156,42 @@ opacity: 30%;
   line-height: 21px;
 }
 
-.hotels-list a:nth-last-of-type(1) {
-  color:white;
+.hotels-list .reserv {
+  color: #ffffff;
   background-color: #766357;
   line-height: 21px;
   font-weight: bold;
 }
 
-.hotels-list a:nth-last-of-type(2) {
-  color:white;
+.hotels-list .detail {
+  color:#ffffff;
   background-color: #81b3d2;
   line-height: 21px;
   font-weight: bold;
 }
 
-.hotels-list a:nth-last-of-type(1):hover {
+.hotels-list .reserv:hover {
   background-color: #604e43;
 }
 
-.hotels-list a:nth-last-of-type(2):hover {
+.hotels-list .detail:hover {
   background-color: #669ec0;
 }
 
-.hotels-list a:nth-last-of-type(1):focus {
+.hotels-list .reserv:focus {
   background-color: #503e33;
   opacity: 30%;
 }
 
-.hotels-list a:nth-last-of-type(2):focus {
+.hotels-list .detail:focus {
   background-color: #5496bd;
   opacity: 30%;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
