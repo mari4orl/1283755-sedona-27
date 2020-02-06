@@ -147,7 +147,7 @@ a {
   color: #81b3d2;
 }
 
-.hotel-name:focus {
+a:focus .hotel-name{
   color: rgba(0, 0, 0, 0.3);
 }
 
