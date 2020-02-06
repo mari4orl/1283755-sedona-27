@@ -15,6 +15,29 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.main-navigation-wrapper {
+    width: 100%;
+}
+
+.main-navigation-wrapper .container {
+  display: flex;
+}
+
+.promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 717px;
+  justify-content: space-between;
+  padding-top: 76px;
+}
+
 .site-navigation {
   list-style: none;
   font-weight: bold;
@@ -70,6 +93,7 @@ a {
 
 .interested {
   text-align: center;
+  padding-top: 57px;
 }
 
 .interested b {
@@ -80,6 +104,7 @@ a {
 .interested .instruction {
   color: #333333;
   line-height: 24px;
+  padding-bottom: 52px;
 }
 
 .interested a {
@@ -102,17 +127,35 @@ a {
   display: none;
 }
 
-/* .main-footer {
-  background-color: #eeeeee;
-} */
+.main-footer {
+  padding: 0;
+  padding-top: 36px;
+}
+
+.main-footer .container {
+  display: flex;
+}
 
 .footer-contacts {
   font-size: 21px;
   font-weight: bold;
+
+  min-width: 223px;
+
+  margin-left: 132px;
+  margin-right: 169px;
+  margin-bottom: 32px;
 }
 
 .footer-contacts a {
   color: #000000;
+}
+
+.footer-social {
+  list-style: none;
+  text-align: center;
+
+
 }
 
 .footer-social a {
@@ -128,19 +171,40 @@ a {
   opacity: 0.3;
 }
 
-.footer-social {
-  list-style: none;
-  text-align: center;
+.footer-copyright {
+  width: 197px;
+
+  margin-left: 228px;
+  margin-right: 101px;
+  margin-bottom: 40px;
 }
 
 .hotels-list {
   list-style: none;
+  padding: 0;
+}
+
+.hotels-list li {
+  display: flex;
+  align-items:center;
+  padding: 30px 73px 31px 72px;
+}
+
+.hotel-info {
+  margin-left: 30px;
+}
+
+.hotel-raiting {
+  margin-left: auto;
+  /* временно */
+  min-height: 90px;
 }
 
 .hotel-name {
   color: #000000;
   font-size: 21px;
   font-weight: bold;
+  margin: 0;
 }
 
 .hotel-name:hover {
