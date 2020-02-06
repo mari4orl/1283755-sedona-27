@@ -48,12 +48,12 @@ a {
   text-align: center;
 }
 
-.descript p:first-of-type {
+.descript-title {
   font-weight: bold;
   font-size: 21px;
 }
 
-.descript p:last-of-type {
+.descript-text {
   color: #333333;
 }
 
@@ -95,7 +95,7 @@ a {
 
 .interested a:focus {
   background-color: #503e33;
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 .popup {
@@ -125,7 +125,7 @@ a {
 
 .footer-social a:focus {
   background-color: #5496bd;
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 .footer-social {
@@ -156,36 +156,36 @@ a:focus .hotel-name{
   line-height: 21px;
 }
 
-.hotels-list .reserv {
+.reserve-button {
   color: #ffffff;
   background-color: #766357;
   line-height: 21px;
   font-weight: bold;
 }
 
-.hotels-list .detail {
+.detail-button {
   color:#ffffff;
   background-color: #81b3d2;
   line-height: 21px;
   font-weight: bold;
 }
 
-.hotels-list .reserv:hover {
+.reserve-button:hover {
   background-color: #604e43;
 }
 
-.hotels-list .detail:hover {
+.detail-button:hover {
   background-color: #669ec0;
 }
 
-.hotels-list .reserv:focus {
+.reserve-button:focus {
   background-color: #503e33;
-  opacity: 30%;
+  opacity: 0.3;
 }
 
-.hotels-list .detail:focus {
+.detail-button:focus {
   background-color: #5496bd;
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 .visually-hidden {
