@@ -105,16 +105,67 @@ a {
   color: #333333;
 }
 
-/* .feature-item {
+/* Преимуществаааа */
+
+.feature-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.feature-item {
   color: #ffffff;
   text-align: center;
   background-color: #81b3d2;
   line-height: 21px;
+
+  width: 400px;
 }
+
 .feature-item h3 {
-    font-size: 21px;
-    font-weight: bold;
-} */
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.recomend-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+}
+
+.recomend-list li {
+  text-align: center;
+  /* outline: 1px solid red; */
+  width: 400px;
+}
+
+.recomend-list p {
+  color: #333333;
+  line-height: 21px;
+}
+
+.feature-item:nth-of-type(2) {
+  margin-left: auto;
+}
+
+.features-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+}
+
+.features-list li {
+  width: 400px;
+  /* outline: 1px solid red; */
+  text-align: center;
+  background-color: #eeeeee;
+}
+
+/* Заинтересовались */
 
 .interested {
   text-align: center;
@@ -227,6 +278,96 @@ a {
 
 /* Каталог */
 
+.current {
+  color: #766357;
+}
+
+.filter {
+  background-image: url("../img/filter-background.jpg");
+  background-position: 0 -300px;
+  background-repeat: no-repeat;
+  background-color: #81b3d2;
+
+  color: #ffffff;
+  line-height: 21px;
+}
+
+.filter-wrapper {
+  display: flex;
+  padding: 31px 72px;
+}
+
+.filter fieldset {
+  border: none;
+  padding: 0;
+}
+
+.filter ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.filter legend {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.infra {
+  margin: 0;
+  margin-right: 115px;
+}
+
+.housing {
+  margin: 0;
+}
+
+.cost {
+  margin: 0;
+  margin-left: auto;
+}
+
+.sort {
+  display: flex;
+  padding: 33px 72px;
+  background-color: #ffffff;
+}
+
+.sort p {
+  margin: 0;
+  margin-right: 49px;
+
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.sort-type {
+  list-style: none;
+  font-size: 12px;
+  line-height: 18px;
+
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.sort-title {
+  margin: 0;
+  margin-right: 40px;
+
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: normal;
+}
+
+.sort-type li {
+  margin-right: 30px;
+}
+
+.sort-type li:last-child {
+  margin-right: 0;
+}
+
 .catalog {
   background-color: #ffffff;
 }
@@ -239,7 +380,7 @@ a {
 
 .hotels-list li {
   display: flex;
-  padding: 30px 73px 31px 72px;
+  padding: 30px 73px;
 }
 
 .hotel-info {

@@ -19,61 +19,64 @@
               <li class="nav-item"><a href="#">Информация</a></li>
               <li class="nav-item"><a href="#">Фото и видео</a></li>
               <li class="nav-item"><a href="#">Карта штата</a></li>
-              <li class="nav-item"><a>Гостиницы</a></li>
+              <li class="nav-item current">Гостиницы</li>
             </ul>
         </div>
       </nav>
     </header>
     <main>
-      <section>
+      <section class="filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form action="https://echo.htmlacademy.ru" method="get">
-          <fieldset>
-            <legend>Инфраструктура:</legend>
-            <ul>
-              <li>
-                <input type="checkbox" name="pool" id="pool" checked>
-                <label for="pool">Бассейн</label>
-              <li>
-                <input type="checkbox" name="parking" id="parking">
-                <label for="parking">Парковка</label>
-              <li>
-                <input type="checkbox" name="wifi" id="wifi">
-                <label for="wifi">Wi-Fi</label>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend>Тип жилья:</legend>
-            <ul>
-              <li>
-                <input type="checkbox" name="hotel" id="hotel" checked>
-                <label for="hotel">Гостиница</label>
-              <li>
-                <input type="checkbox" name="motel" id="motel" checked>
-                <label for="motel">Мотель</label>
-              <li>
-                <input type="checkbox" name="apartment" id="apartment" checked>
-                <label for="apartment">Апартаменты</label>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend>Стоимость в сутки (Р):</legend>
-            <label for="from">От</label>
-            <input type="text" name="from" value="0" id="from">
-            <label for="to">До</label>
-            <input type="text" name="to" value="3000" id="to">
+          <div class="filter-wrapper">
+            <fieldset class="infra">
+              <legend>Инфраструктура:</legend>
+              <ul>
+                <li>
+                  <input type="checkbox" name="pool" id="pool" checked>
+                  <label for="pool">Бассейн</label>
+                <li>
+                  <input type="checkbox" name="parking" id="parking">
+                  <label for="parking">Парковка</label>
+                <li>
+                  <input type="checkbox" name="wifi" id="wifi">
+                  <label for="wifi">Wi-Fi</label>
+              </ul>
+            </fieldset>
+            <fieldset class="housing">
+              <legend>Тип жилья:</legend>
+              <ul>
+                <li>
+                  <input type="checkbox" name="hotel" id="hotel" checked>
+                  <label for="hotel">Гостиница</label>
+                <li>
+                  <input type="checkbox" name="motel" id="motel" checked>
+                  <label for="motel">Мотель</label>
+                <li>
+                  <input type="checkbox" name="apartment" id="apartment" checked>
+                  <label for="apartment">Апартаменты</label>
+              </ul>
+            </fieldset>
+            <fieldset class="cost">
+              <legend>Стоимость в сутки (Р):</legend>
+              <label for="from">От</label>
+              <input type="text" name="from" value="0" id="from">
+              <label for="to">До</label>
+              <input type="text" name="to" value="3000" id="to">
 
-            <div class="range_buttons">
-              <button type="button"></button>
-              <button type="button"></button>
-            </div>
-            <input type="submit" value="Показать">
-          </fieldset>
+              <div class="range_buttons">
+                <button type="button"></button>
+                <button type="button"></button>
+              </div>
+              <input type="submit" value="Показать">
+            </fieldset>
+          </div>
+        </form>
       </section>
-        <div>
+        <div class="sort">
           <p>Найдено: 3</p>
-          <h3>Сортировка:</h3>
-          <ul>
+          <h3 class="sort-title">Сортировка:</h3>
+          <ul class="sort-type">
             <li><a>По цене</a></li>
             <li><a href="">По типу</a></li>
             <li><a href="">По рейтингу</a></li>
