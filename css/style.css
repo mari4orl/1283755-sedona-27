@@ -30,14 +30,6 @@ a {
   display: none;
 }
 
-.promo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 717px;
-  justify-content: space-between;
-  padding-top: 76px;
-}
 
 .site-navigation {
   display: flex;
@@ -72,11 +64,17 @@ a {
 
 .promo {
   background-image: url("../img/background-photo.jpg");
-  background-position: 0 -56px;
+  background-position: 0 -75px;
   background-repeat: no-repeat;
   background-color: #ddebf4;
-}
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 675px;
+  justify-content: space-between;
+  padding-top: 76px;
+}
 
 .descript {
   display: flex;
@@ -86,7 +84,7 @@ a {
   background-color: #ffffff;
   width: 100%;
   padding-top: 61px;
-  padding-bottom: 56px;
+  padding-bottom: 46px;
 }
 
 .descript p {
@@ -99,7 +97,7 @@ a {
 
   width: 440px;
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 34px;
 }
 
 .descript-text {
@@ -120,7 +118,7 @@ a {
 
 .interested {
   text-align: center;
-  padding-top: 57px;
+  padding-top: 48px;
 
   background-color: #ffffff;
 }
@@ -135,8 +133,8 @@ a {
   line-height: 24px;
 
   margin: 0;
-  margin-bottom: 52px;
-  margin-top: 36px;
+  margin-bottom: 47px;
+  margin-top: 26px;
 }
 
 .interested a {
@@ -162,7 +160,7 @@ a {
 .main-footer {
   display: flex;
   padding: 0;
-  padding-top: 36px;
+  padding-top: 28px;
   padding-bottom: 32px;
   background-color: #ffffff;
 }
@@ -241,16 +239,22 @@ a {
 
 .hotels-list li {
   display: flex;
-  align-items:center;
   padding: 30px 73px 31px 72px;
 }
 
-.hotels-list p {
-}
-
 .hotel-info {
+  display: flex;
+  flex-direction: column;
   margin-left: 30px;
 }
+
+.buttons {
+  margin-top: auto;
+}
+
+.hotel-picture {
+  display: flex;
+ }
 
 .hotel-raiting {
   margin-left: auto;
@@ -278,8 +282,7 @@ a:focus .hotel-name{
   line-height: 21px;
 
   margin: 0;
-  margin-top: 17px;
-  margin-bottom: 19px;
+  margin-top: 9px;
 }
 
 .reserve-button {
