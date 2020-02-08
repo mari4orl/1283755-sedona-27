@@ -8,7 +8,7 @@ body {
   line-height: 26px;
   text-transform: uppercase;
 
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 a {
@@ -23,10 +23,11 @@ a {
 
 .main-navigation-wrapper {
     width: 100%;
+    background-color: #ffffff;
 }
 
-.main-navigation-wrapper .container {
-  display: flex;
+.main-header-logo {
+  display: none;
 }
 
 .promo {
@@ -39,8 +40,13 @@ a {
 }
 
 .site-navigation {
+  display: flex;
+
   list-style: none;
   font-weight: bold;
+
+  margin: 0;
+  padding: 22px 0;
 }
 
 .site-navigation a {
@@ -55,16 +61,32 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.nav-item {
+  width: 239px;
+  text-align: center;
+}
+
+.nav-item:nth-child(2) {
+  margin-right: auto;
+}
+
 .promo {
   background-image: url("../img/background-photo.jpg");
-  background-position: top center;
+  background-position: 0 -56px;
   background-repeat: no-repeat;
   background-color: #ddebf4;
 }
 
 
 .descript {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   background-color: #ffffff;
+  width: 100%;
+  padding-top: 61px;
+  padding-bottom: 56px;
 }
 
 .descript p {
@@ -74,9 +96,14 @@ a {
 .descript-title {
   font-weight: bold;
   font-size: 21px;
+
+  width: 440px;
+  margin: 0;
+  margin-bottom: 38px;
 }
 
 .descript-text {
+  margin: 0;
   color: #333333;
 }
 
@@ -94,6 +121,8 @@ a {
 .interested {
   text-align: center;
   padding-top: 57px;
+
+  background-color: #ffffff;
 }
 
 .interested b {
@@ -104,7 +133,10 @@ a {
 .interested .instruction {
   color: #333333;
   line-height: 24px;
-  padding-bottom: 52px;
+
+  margin: 0;
+  margin-bottom: 52px;
+  margin-top: 36px;
 }
 
 .interested a {
@@ -128,23 +160,22 @@ a {
 }
 
 .main-footer {
+  display: flex;
   padding: 0;
   padding-top: 36px;
-}
-
-.main-footer .container {
-  display: flex;
+  padding-bottom: 32px;
+  background-color: #ffffff;
 }
 
 .footer-contacts {
   font-size: 21px;
   font-weight: bold;
 
-  min-width: 223px;
-
-  margin-left: 132px;
-  margin-right: 169px;
-  margin-bottom: 32px;
+  min-height: 48px;
+  width: 400px;
+  margin: 0;
+  padding-left: 132px;
+  box-sizing: border-box;
 }
 
 .footer-contacts a {
@@ -152,10 +183,24 @@ a {
 }
 
 .footer-social {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  width: 400px;
+
   list-style: none;
   text-align: center;
+}
 
+.social-item {
+  width: 46px;
+  height: 48px;
+  margin-right: 6px;
+}
 
+.social-item:last-child {
+  margin-right: 0;
 }
 
 .footer-social a {
@@ -171,23 +216,36 @@ a {
   opacity: 0.3;
 }
 
-.footer-copyright {
-  width: 197px;
+.footer-copyright p {
+  margin: 0;
+}
 
-  margin-left: 228px;
+.footer-copyright {
+  /* width: 400px; */
+  margin: 0;
   margin-right: 101px;
-  margin-bottom: 40px;
+  margin-left: auto;
+}
+
+/* Каталог */
+
+.catalog {
+  background-color: #ffffff;
 }
 
 .hotels-list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .hotels-list li {
   display: flex;
   align-items:center;
   padding: 30px 73px 31px 72px;
+}
+
+.hotels-list p {
 }
 
 .hotel-info {
@@ -218,6 +276,10 @@ a:focus .hotel-name{
 .hotels-list p {
   color: #333333;
   line-height: 21px;
+
+  margin: 0;
+  margin-top: 17px;
+  margin-bottom: 19px;
 }
 
 .reserve-button {
