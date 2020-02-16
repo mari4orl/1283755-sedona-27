@@ -23,8 +23,8 @@ a {
 }
 
 .main-navigation-wrapper {
-    width: 100%;
-    background-color: #ffffff;
+  width: 100%;
+  background-color: #ffffff;
 }
 
 .main-header-logo {
@@ -81,6 +81,8 @@ a {
 }
 
 .descript {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -109,7 +111,7 @@ a {
   color: #333333;
 }
 
-.promo::after {
+.descript::before {
   content: "";
 
   background-image: url("../img/polygon.png");
@@ -118,7 +120,7 @@ a {
   height: 59px;
 
   position: absolute;
-  top: 531px;
+  top: -58px;
 
 }
 
@@ -361,7 +363,6 @@ a {
 
 .popup input:focus {
   background-color: transparent;
-  border: 1px solid #e5e5e5;
 }
 
 .date input {
@@ -408,11 +409,11 @@ a {
 
 .person-amount {
   display: flex;
-  /* justify-content: space-between; */
 }
 
 .person {
   display: flex;
+  align-items: center;
 
   margin: 0;
 }
@@ -449,7 +450,7 @@ a {
 }
 
 .kids {
-  margin-left: 53px;
+  margin-left: auto;
 }
 
 .kids label {
@@ -464,8 +465,7 @@ a {
   text-align: center;
   background-color: #81b3d2;
 
-  padding-bottom: 20px;
-  padding-top: 14px;
+  padding: 17.5px 0;
   width: 458px;
   border: none;
   margin-top: 24px;
@@ -661,6 +661,17 @@ a {
   border-radius: 2px;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
 .price-controls::after {
   content: "";
   position: absolute;
@@ -728,8 +739,10 @@ a {
   position: absolute;
   top: -9px;
 
-  width: 4px;
-  height: 4px;
+  padding: 0;
+
+  width: 20px;
+  height: 20px;
 
   background: #ababab;
   border: 8px solid #ffffff;
