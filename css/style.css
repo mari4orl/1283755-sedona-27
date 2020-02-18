@@ -11,6 +11,11 @@ body {
   background-color: #f2f2f2;
 }
 
+.catalog img {
+  max-width: 100%;
+  height: auto;
+}
+
 a {
   text-decoration: none;
 }
@@ -109,6 +114,7 @@ a {
 .descript-text {
   margin: 0;
   color: #333333;
+  max-width: 500px;
 }
 
 .descript::before {
@@ -120,7 +126,7 @@ a {
   height: 59px;
 
   position: absolute;
-  top: -58px;
+  top: -57px;
 
 }
 
@@ -150,8 +156,14 @@ a {
 
 .feature-text h3 {
   margin: 0;
+
   font-weight: bold;
   font-size: 21px;
+}
+
+.feature-text:first-child h3 {
+  margin-left:70px;
+  width:140px;
 }
 
 .feature-text p {
@@ -363,6 +375,8 @@ a {
 
 .popup input:focus {
   background-color: transparent;
+  outline: none;
+  outline: 2px solid #e5e5e5;
 }
 
 .date input {
@@ -386,6 +400,7 @@ a {
 .date button {
   position: absolute;
 
+  outline: none;
   border: none;
   padding: 0;
   right: 10px;
@@ -484,6 +499,12 @@ a {
 
 .map {
   display: flex;
+  /* background-image: url("../img/map.jpg");
+  /* background-position: 0 120px; */
+  /* background-repeat: no-repeat;
+  width: 100%;
+  height: 473px; */
+  /* background-color: #ddebf4; */ */
 }
 
 .main-footer {
@@ -499,11 +520,13 @@ a {
   font-size: 21px;
   font-weight: bold;
 
-  min-height: 48px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
   width: 400px;
-  margin: 0;
   padding-left: 132px;
-  box-sizing: border-box;
+  margin: 0;
 }
 
 .footer-contacts a {
@@ -513,10 +536,12 @@ a {
 .footer-social {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+
   padding: 0;
   margin: 0;
   width: 400px;
-  flex-wrap: wrap;
+
 
   list-style: none;
   text-align: center;
@@ -556,10 +581,10 @@ a {
 .footer-copyright {
   display: flex;
   align-items: center;
+  width: 400px;
+  justify-content: center;
 
   margin: 0;
-  margin-right: 101px;
-  margin-left: auto;
 }
 
 .footer-copyright span {
@@ -647,6 +672,34 @@ a {
 
 .cost legend {
   margin-bottom: 9px;
+}
+
+.filter-checkbox {
+  cursor: pointer;
+  padding-top: 3px;
+  margin-left: 40px;
+
+  position: relative;
+}
+
+.filter-checkbox input[type="checkbox"] + .checkbox-indicator {
+  background-image: url("../img/checkbox-off.svg");
+  width: 23px;
+  height: 23px;
+
+  position: absolute;
+  top: 0;
+  left: -40px;
+}
+
+.filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
+  background-image: url("../img/checkbox-on.svg");
+  width: 27px;
+  height: 23px;
+
+  position: absolute;
+  top: 0;
+  left: -40px;
 }
 
 .price-controls {
