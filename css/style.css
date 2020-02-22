@@ -332,7 +332,7 @@ a {
   margin-top: 26px;
 }
 
-.interested a {
+.search-link {
   display: block;
   width: 568px;
   font-size: 21px;
@@ -343,17 +343,42 @@ a {
   margin-left: 316px;
 }
 
-.interested a:hover {
+.search-link:hover {
   background-color: #604e43;
 }
 
-.interested a:focus {
+.search-link:focus {
   background-color: #503e33;
   color: rgba(255, 255, 255, 0.3);
 }
+@keyframes slide-down {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slide-down {
+    0% {
+        -webkit-transform: translateY(-100%);
+    }
+    100% {
+        -webkit-transform: translateY(0%);
+    }
+}
 
 .popup {
-  /* display: none; */
+  display: block;
+
+  animation-name: slide-down;
+  -webkit-animation-name: slide-down;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+
   background-color: #ffffff;
   box-sizing: border-box;
 
@@ -362,6 +387,10 @@ a {
 
   width: 568px;
   padding: 55px;
+}
+
+.popup-close {
+  display: none;
 }
 
 .popup p {
