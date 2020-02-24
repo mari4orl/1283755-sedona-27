@@ -261,6 +261,8 @@ a {
   list-style: none;
 
   display: flex;
+
+  z-index: 2;
 }
 
 .features-list li {
@@ -309,13 +311,14 @@ a {
 
 /* Заинтересовались */
 
-.interested {
+.interested-wrapper {
   position: relative;
 
   text-align: center;
   padding-top: 48px;
 
   background-color: #ffffff;
+  z-index: 2;
 }
 
 .interested b {
@@ -351,33 +354,16 @@ a {
   background-color: #503e33;
   color: rgba(255, 255, 255, 0.3);
 }
-@keyframes slide-down {
-    0% {
-        transform: translateY(-100%);
-    }
-    100% {
-        transform: translateY(0%);
-    }
-}
-
-@-webkit-keyframes slide-down {
-    0% {
-        -webkit-transform: translateY(-100%);
-    }
-    100% {
-        -webkit-transform: translateY(0%);
-    }
-}
 
 .popup {
   display: block;
 
-  animation-name: slide-down;
+  /* animation-name: slide-down;
   -webkit-animation-name: slide-down;
   animation-duration: 1s;
   -webkit-animation-duration: 1s;
   animation-timing-function: ease;
-  -webkit-animation-timing-function: ease;
+  -webkit-animation-timing-function: ease; */
 
   background-color: #ffffff;
   box-sizing: border-box;
@@ -387,10 +373,13 @@ a {
 
   width: 568px;
   padding: 55px;
+
+  transition: all 0.6s;
 }
 
+
 .popup-close {
-  display: none;
+  margin-top: -395px;
 }
 
 .popup p {
