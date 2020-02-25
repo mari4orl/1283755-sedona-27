@@ -17,3 +17,5 @@ form.addEventListener("submit", function (evt) {
     }
   });
 });
+
+popup.classList.add('popup-close');
