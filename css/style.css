@@ -335,7 +335,7 @@ a {
   line-height: 24px;
 
   margin: 0;
-  margin-bottom: 47px;
+  margin-bottom: 44px;
   margin-top: 23px;
 }
 
@@ -350,7 +350,7 @@ a {
 
   background-color: #766357;
 
-  padding: 28px 0 33px 0;
+  padding: 29px 0 30px 0;
   margin-left: 316px;
 }
 
@@ -562,7 +562,7 @@ a {
   flex-wrap: wrap;
 
   width: 400px;
-  padding-left: 125px;
+  padding-left: 132px;
   margin: 0;
   margin-top: -5px;
   box-sizing: border-box;
@@ -622,19 +622,22 @@ a {
 
 .footer-copyright {
   display: flex;
-  align-items: center;
-  width: 400px;
   justify-content: center;
+  align-items: center;
+
+  width: 400px;
 
   margin: 0;
 }
 
 .footer-copyright span {
   margin-right: 8px;
+
+  align-self: center;
 }
 
 .copyright-logo {
-  display: inline-block;
+  /* display: inline-block; */
   width: 115px;
   height: 41px;
 }
@@ -665,7 +668,7 @@ a {
 
 .filter-wrapper {
   display: flex;
-  padding: 26px 74px 30px 72px;
+  padding: 26px 72px 30px 72px;
 }
 
 .filter fieldset {
@@ -680,7 +683,7 @@ a {
 }
 
 .filter li {
-  margin-bottom: 28px;
+  margin-bottom: 25px;
 }
 
 .filter li:last-child {
@@ -694,7 +697,7 @@ a {
 
 .infra {
   margin: 0;
-  margin-right: 115px;
+  margin-right: 118px;
 }
 
 .infra legend,
@@ -709,7 +712,6 @@ a {
 .cost {
   margin: 0;
   margin-left: auto;
-  width: 330px;
 }
 
 .cost legend {
@@ -747,8 +749,9 @@ a {
 .price-controls {
   position: relative;
 
-  height: 36px;
+  width: 314px;
   margin-bottom: 20px;
+  padding: 5px 0;
 
   font-size: 0;
 
@@ -784,16 +787,17 @@ input[type=number] {
   display: inline-block;
 
   font-size: 14px;
-  line-height: 38px;
-  vertical-align: top;
+  line-height: 21px;
+  vertical-align: middle;
 
   cursor: pointer;
 }
 
-.price-controls .min-price,
-.price-controls .max-price {
-  width: 90px;
+.price-controls .min-price {
   padding-left: 65px;
+}
+.price-controls .max-price {
+  padding-left: 76px;
 }
 
 .price-controls input {
@@ -860,8 +864,8 @@ input[type=number] {
 
 .btn-transparent {
   display: block;
-  margin: 0 auto;
-  padding: 6px 35px;
+  margin: 0 96px 0 85px;
+  padding: 6px 34px;
 
   font-size: 14px;
   line-height: 20px;
@@ -1034,11 +1038,16 @@ a:focus .hotel-name{
 }
 
 .hotels-list p {
+  display: flex;
+  justify-content: space-between;
+
+  width: 180px;
+
   color: #333333;
   line-height: 21px;
 
   margin: 0;
-  margin-top: 9px;
+  margin-top: 6px;
 }
 
 .button {
