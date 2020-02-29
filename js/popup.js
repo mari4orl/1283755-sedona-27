@@ -13,7 +13,9 @@ form.addEventListener("submit", function (evt) {
   inputs.forEach(function(input) {
     if (!input.value) {
       evt.preventDefault();
-      console.log("Нужно ввести значения в поля");
+      popup.classList.remove("popup-error");
+      popup.offsetWidth = popup.offsetWidth;
+      popup.classList.add('popup-error');
     }
   });
 });
