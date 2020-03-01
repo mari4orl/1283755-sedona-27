@@ -162,6 +162,10 @@ a {
   display: flex;
 }
 
+.feature-item img{
+  height: auto;
+}
+
 .feature-text {
   display: flex;
   flex-direction: column;
