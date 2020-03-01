@@ -142,12 +142,12 @@ a {
 
   background-image: url("../img/polygon.png");
   background-repeat: no-repeat;
-  width: 1200px;
+  width: 1201px;
   height: 59px;
 
   position: absolute;
   top: -57px;
-  left: 0;
+  left: -1px;
 
 }
 
@@ -173,6 +173,7 @@ a {
   line-height: 21px;
 
   padding-top: 46px;
+  padding-bottom: 60px;
   width: 400px;
 }
 
@@ -259,7 +260,7 @@ a {
 
 .recomend h3 {
   margin: 0;
-  margin-top: auto;
+  padding-top: 160px;
   margin-bottom: 24px;
 
   font-size: 21px;
@@ -761,6 +762,7 @@ iframe {
 
 .filter-checkbox input[type="checkbox"] + .checkbox-indicator {
   background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
   width: 23px;
   height: 23px;
 
@@ -771,12 +773,13 @@ iframe {
 
 .filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
   background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
   width: 27px;
   height: 23px;
+}
 
-  position: absolute;
-  top: 0;
-  left: -40px;
+.filter-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
+  outline: 2px solid #81b3d2;
 }
 
 .filter-checkbox input[type="checkbox"]:disabled + .checkbox-indicator {
@@ -784,10 +787,6 @@ iframe {
   width: 27px;
   height: 23px;
   opacity: 0.3;
-
-  position: absolute;
-  top: 0;
-  left: -40px;
 }
 
 .price-controls {
